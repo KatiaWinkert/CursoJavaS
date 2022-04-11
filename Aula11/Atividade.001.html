@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Country</title>
+    <style>
+      body {
+        font: normal 15pt Arial;
+        background: rgb(26, 161, 214);
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Qual Pais você vive?</h1>
+    <p>
+      Selecione o seu Pais de origem:
+
+      <input type="text" name="txtpais" id="txtpais" />
+      <input type="button" value="Enviar" onclick="check()" />
+    </p>
+    <div id="res"></div>
+
+    <script>
+      function check() {
+        var txtp = window.document.querySelector('input#txtpais')
+        var txtp_string = txtp.value
+        var answer = window.document.querySelector('div#res')
+
+        if (txtp_string != 'Brasil') {
+          answer.innerHTML = `<p>Você é Estrangeiro! Você digitou ${txtp_string}</p>`
+        } else {
+          answer.innerHTML = `<p>Você é Brasileiro!</p>`
+        }
+      }
+    </script>
+  </body>
+</html>
