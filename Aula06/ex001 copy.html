@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Meu primeiro programa</title>
+    <style>
+      body {
+        background-color: rgb(155, 155, 211);
+        color: brown; /* isso é um comentario */
+        font: normal 20pt Arial;
+      }
+      h1 {
+        color: rgba(196, 207, 40, 0.796);
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Olá Mundo</h1>
+    <!-- Isso é um Comentario -->
+    <p>Já me livrei da maldição</p>
+    <script>
+      var n1 = Number(window.prompt('Digite um numero: ')) // o window. prompt ele retorna como uma string
+      var n2 = Number(window.prompt('Digite outro numero: ')) //numer.parseInt ira concerter o numero para intero tem que ser usado porque window.prompt sozinho so retorna string
+      var s = n1 + n2
+      // Number.parseInet é para numeros inteiros
+      // Number.parseFloat é para numeros fracionados
+      /* exemplo de conversão a baixo
+       var n1 = Number.parseInt(window.prompt('Digite um numero: ')) //
+      var n2 = Number.parseInt(window.prompt('Digite outro numero: '))*/
+      window.alert(`A soma entre ${n1} e ${n2} é igual a ${s}`) // + faz a concatenação
+      // (number + number) serve para adição
+      // (string + string)  serve para concatenação
+    </script>
+  </body>
+</html>
