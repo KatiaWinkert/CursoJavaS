@@ -5,3 +5,12 @@ console.log(`o Vetor tem  ${num.length} posições`) // leangth informa quantas 
 console.log(num[0])
 console.log(`O primeiro valor do vetor é ${num[0]}`)
 console.log(num)
+let pos = num.indexOf(5)
+ if( pos == -1 ) {
+     console.log('o valor não foi encontrado!')
+ } else {
+     console.log(`o valor esta na posição ${pos}`)
+ }
+
+
+/*console.log(`O valor 8 esta na posição ${pos}`)*/
