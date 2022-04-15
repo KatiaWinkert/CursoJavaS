@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Desafio 5 curso em video</title>
+    <style>
+      body {
+        font: 12pt Arial;
+      }
+      button {
+        font-size: 12pt;
+        padding: 30px;
+        border-radius: 20px 40px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Calculando o troco</h1>
+    <button onclick="função1()">Comprar Produto</button>
+    <script>
+        function função1() {
+            var produto = prompt('Que produto você está procurando?')
+            var value = Number.parseFloat(prompt(`Quanto custa ${produto} que você está comprando?`))
+            var vpago = Number.parseFloat( prompt(`qual foi o valor que você deu para pagar o ${produto}`))
+
+        }
+    </script>
+  </body>
+</html>
