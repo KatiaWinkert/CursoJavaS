@@ -20,12 +20,20 @@
     <h1>Calculando o troco</h1>
     <button onclick="função1()">Comprar Produto</button>
     <script>
-        function função1() {
-            var produto = prompt('Que produto você está procurando?')
-            var value = Number.parseFloat(prompt(`Quanto custa ${produto} que você está comprando?`))
-            var vpago = Number.parseFloat( prompt(`qual foi o valor que você deu para pagar o ${produto}`))
+      function função1() {
+        var produto = prompt('Que produto você está procurando?')
+        var value = Number.parseFloat(
+          prompt(`Quanto custa ${produto} que você está comprando?`)
+        )
+        var vpago = Number.parseFloat(
+          prompt(`qual foi o valor que você deu para pagar o ${produto}`)
+        )
+        var s = value - vpago
 
-        }
+        window.alert(
+          `Você comprou ${produto} que custou R$${value}. Deu R$${vpago} em dinheiro e vai receber r$${s}de troco. Volte Sempre! `
+        )
+      }
     </script>
   </body>
 </html>
