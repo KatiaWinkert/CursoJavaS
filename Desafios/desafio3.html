@@ -20,11 +20,15 @@
     <button onclick="minhafunção1()">Antecessor e Sucessor</button>
     <script>
       function minhafunção1() {
-        var number1 = window.prompt('digite um número interiro qualquer.')
-        Number(window.alert(
+        var number1 = parseInt(
+          window.prompt('digite um número interiro qualquer.')
+        )
+
+        window.alert(
           `Antes de ${number1}, temos o numero ${
             number1 - 1
-          }. Depois do numero ${number1}, temos o numero ${number1+1}`))
+          }. Depois do numero ${number1}, temos o numero ${number1 + 1}`
+        )
       }
     </script>
   </body>
