@@ -18,13 +18,16 @@
 </head>
 <body>
     <h1>Conversor de Medidas</h1>
-    <button onclick="função1()">Converter</button>
-    <p><strong>Clique no botão a cima para iniciar</strong></p>
-    <script>
-function função1() {
-    var metros = parseFloat(prompt("Digite uma distancia em metros(M)"))
-    
-}
-
-    </script>
+    <input id="bt" type=" button" value="converter"> 
+    <div id=" res">Clique no Botão para iniciar</div>
+    <div>conversão</div>
+   
+   <script src="conversor_medidas.js"> </script>
 </html>
+
+//function that evaluate the value and returns result
+function kiloweightConvert(value) {
+  document.getElementById("Pounds").innerHTML=value*2.2046;
+  document.getElementById("Ounces").innerHTML=value*35.274;
+  document.getElementById("Grams").innerHTML=value*1000;
+  document.getElementById("Stones").innerHTML=value*0.1574;
