@@ -9,8 +9,8 @@
       body {
         font: 12pt Arial;
       }
-      button {
-        font-size: 12pt;
+      input {
+        font-size: 14pt;
         padding: 30px;
         border-radius: 20px 40px;
       }
@@ -18,16 +18,10 @@
 </head>
 <body>
     <h1>Conversor de Medidas</h1>
-    <input id="bt" type=" button" value="converter"> 
-    <div id=" res">Clique no Botão para iniciar</div>
-    <div>conversão</div>
+    <input id="bt" type=" button" value="Converter"> 
+    <div id=" res"><strong>Clique no botão para iniciar</strong> </div>
+    <div id=" conversão"></div>
    
    <script src="conversor_medidas.js"> </script>
 </html>
 
-//function that evaluate the value and returns result
-function kiloweightConvert(value) {
-  document.getElementById("Pounds").innerHTML=value*2.2046;
-  document.getElementById("Ounces").innerHTML=value*35.274;
-  document.getElementById("Grams").innerHTML=value*1000;
-  document.getElementById("Stones").innerHTML=value*0.1574;
