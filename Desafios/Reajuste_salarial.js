@@ -12,8 +12,8 @@ function clicar() {
   let cent = ((d * porcent)/100).toFixed(2) // Reajuste salarial
   let pagAtual = (d*(1+porcent/100)).toFixed(2) // salario reajustado
 
-  res.innerHTML = `${nome} recebeu um aumento salarial!`
-  conv.innerHTML = `O salário atual era R$ ${d}. 
-                    Com o aumento de ${porcent}%, o salário vai aumentar R$${cent} no proximo mês.
-                    E a partir daí, ${nome} vai passar a ganhar ${pagAtual} `
+  res.innerHTML = `<h2><strong>${nome} recebeu um aumento salarial!</strong><h2>`
+  conv.innerHTML = `<p>O salário atual era <strong>R$ ${d}</strong>.<p> 
+                   <p> Com o aumento de <strong>${porcent}%</strong>, o salário vai aumentar <strong>R$${cent}</strong> no proximo mês.<p>
+                    <p> E a partir daí, <strong>${nome}</strong> vai passar a ganhar <strong>${pagAtual}</strong>.<p> `
 }
