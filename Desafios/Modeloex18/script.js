@@ -21,8 +21,7 @@ if(Number(n) >= 1 && Number(n) <= 100){
 
 function adicionar(){
   if (isnumero(num.value) && !inlista(num.value, valores)) {
-      
-  } else {
+      valores.push()
     window.alert('Valor inválido ou já esta adicionado na lista.')
   }
 }
